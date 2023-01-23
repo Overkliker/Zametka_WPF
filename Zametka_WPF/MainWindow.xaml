@@ -1,0 +1,39 @@
+﻿<Window x:Class="Zametka_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zametka_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DatePicker Name="datePicker1" IsDropDownOpen="False" Grid.ColumnSpan="6" SelectedDateFormat="Short" Margin="0, 0, 0, 50"/>
+        <ListBox x:Name="Zametki" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="4"></ListBox>
+
+        <Label x:Name="NameLabel" Content="Название" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"></Label>
+        <TextBox x:Name="NameZamBox" Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="3" Height="25" VerticalAlignment="Top"></TextBox>
+
+        <Label Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" Content="Описание" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"></Label>
+        <TextBox x:Name="DescriptionBox" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="3" Height="25" VerticalAlignment="Top"></TextBox>
+
+        <Button x:Name="DeleteBtn" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" Height="30" Content="Удалить запись" Click="DeleteBtn_Click"></Button>
+        <Button x:Name="MakeBtn" Grid.Column="4" Grid.Row="5" Height="30" Content="Создать запись" Click="MakeBtn_Click"></Button>
+        <Button x:Name="SaveBtn" Grid.Column="5" Grid.Row="5" Height="30" Content="Сохранить запись" Click="SaveBtn_Click"></Button>
+    </Grid>
+</Window>
