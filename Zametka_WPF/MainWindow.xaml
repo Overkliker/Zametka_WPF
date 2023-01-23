@@ -23,14 +23,14 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <DatePicker Name="datePicker1" IsDropDownOpen="False" Grid.ColumnSpan="6" SelectedDateFormat="Short" Margin="0, 0, 0, 50"/>
-        <ListBox x:Name="Zametki" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="4"></ListBox>
+        <DatePicker Name="datePicker1" IsDropDownOpen="False" Grid.ColumnSpan="6" SelectedDateFormat="Short" Margin="0, 0, 0, 45"/>
+        <ListBox x:Name="Zametki" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="4" SelectionChanged="Zametki_SelectionChanged"></ListBox>
 
         <Label x:Name="NameLabel" Content="Название" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"></Label>
         <TextBox x:Name="NameZamBox" Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="3" Height="25" VerticalAlignment="Top"></TextBox>
 
         <Label Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" Content="Описание" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"></Label>
-        <TextBox x:Name="DescriptionBox" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="3" Height="25" VerticalAlignment="Top"></TextBox>
+        <TextBox x:Name="DescriptionBox" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="3" Height="25" VerticalAlignment="Top"/>
 
         <Button x:Name="DeleteBtn" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" Height="30" Content="Удалить запись" Click="DeleteBtn_Click"></Button>
         <Button x:Name="MakeBtn" Grid.Column="4" Grid.Row="5" Height="30" Content="Создать запись" Click="MakeBtn_Click"></Button>
