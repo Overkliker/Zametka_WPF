@@ -78,5 +78,10 @@ namespace Zametka_WPF
 
 
         }
+
+        private void datePicker1_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

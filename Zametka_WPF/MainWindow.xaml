@@ -23,7 +23,7 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <DatePicker Name="datePicker1" IsDropDownOpen="False" Grid.ColumnSpan="6" SelectedDateFormat="Short" Margin="0, 0, 0, 45"/>
+        <DatePicker Name="datePicker1" IsDropDownOpen="False" Grid.ColumnSpan="6" SelectedDateFormat="Short" SelectedDateChanged="datePicker1_SelectedDateChanged" Margin="0, 0, 0, 45"/>
         <ListBox x:Name="Zametki" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="4" SelectionChanged="Zametki_SelectionChanged"></ListBox>
 
         <Label x:Name="NameLabel" Content="Название" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"></Label>
